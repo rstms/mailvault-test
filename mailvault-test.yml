@@ -1,0 +1,10 @@
+name: mailvault-test
+device: loop0
+image_size: 2
+imap_server: imap.cypress-trading.com
+sudo_user: mkrueger
+imap_users:
+  mkrueger: { uid: 1000, gid: 1000, password: XXXXXX }
+  test1: { uid: 1025, gid: 1027, password: XXXXXX }
+  test2: { uid: 1026, gid: 1028, password: XXXXXX }
+  test3: { uid: 1027, gid: 1029, password: XXXXXXX }

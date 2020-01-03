@@ -1,0 +1,18 @@
+version: '3'
+
+volumes:
+  mailvault:
+    external: true
+
+services:
+  mailvault-test:
+    container_name: mailvault-test
+    hostname: mailvault-test
+    image: "rstms/mailvault:latest"
+    privileged: true
+    ports:
+      - "10022:22"
+      - "10143:143"
+    volumes:
+      - mailvault:/var/vault
+
